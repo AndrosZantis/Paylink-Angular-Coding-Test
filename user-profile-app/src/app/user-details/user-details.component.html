@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card profile-card text-center overflow-hidden bg-blue-900">
+        <div class="profile-header bg-cover bg-center bg-blue-900"></div>
+        <div class="card-body bg-white">
+          <div class="text-center -mt-16">
+            <img [src]="user.profileImgSrc" class="rounded-circle profile-img mx-auto border-4 border-white shadow-lg" alt="Profile Image" width="100">
+          </div>
+          <h2 class="card-title text-xl font-bold">{{user.name}}</h2>
+          <p class="card-text text-gray-500">{{user.socialMediaHandle}}</p>
+          <p class="card-text">{{user.bio}}</p>
+          <p class="card-text text-gray-500">{{user.location}}</p>
+          <a href="{{user.website}}" target="_blank" class="text-primary">{{user.website}}</a>
+          <div class="mt-4">
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-3/4 mb-2 shadow-lg">View CV</button>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-3/4 shadow-lg">Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
